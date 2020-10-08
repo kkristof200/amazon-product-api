@@ -142,6 +142,11 @@ require('yargs')
             type: 'string',
             describe: 'Set custom user-agent. USE THIS OR \'user-agent\'!',
         },
+        rh: {
+            default: null,
+            type: 'string',
+            describe: 'Custom url encoded rh filter for searching products',
+        }
         category: {
             alias: 'c',
             default: null,
