@@ -110,6 +110,11 @@ require('yargs')
             type: 'number',
             describe: 'Maximum allowed rating',
         },
+        minReviewCount: {
+            default: null,
+            type: 'number',
+            describe: 'Minimum needed review count',
+        }
         minPrice: {
             alias: 'minp',
             default: null,
