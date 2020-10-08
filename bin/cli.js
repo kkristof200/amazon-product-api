@@ -114,7 +114,12 @@ require('yargs')
             default: null,
             type: 'number',
             describe: 'Minimum needed review count',
-        }
+        },
+        ignoredAsins: {
+            default: null,
+            type: 'string',
+            describe: 'ignored asins: asin1,asin2,asin3,...',
+        },
         minPrice: {
             alias: 'minp',
             default: null,
