@@ -76,7 +76,7 @@ require('yargs')
             alias: 'n',
             default: 20,
             type: 'number',
-            describe: 'Number of products to scrape. Maximum 100 products or 300 reviews',
+            describe: 'Number of products to scrape. Maximum 1000 products or 2000 reviews',
         },
         filetype: {
             default: 'csv',
@@ -109,6 +109,18 @@ require('yargs')
             default: 5,
             type: 'number',
             describe: 'Maximum allowed rating',
+        },
+        minPrice: {
+            alias: 'minp',
+            default: null,
+            type: 'number',
+            describe: 'Minimum allowed price',
+        },
+        maxPrice: {
+            alias: 'maxp',
+            default: null,
+            type: 'number',
+            describe: 'Maximum allowed price',
         },
         country: {
             default: 'US',
