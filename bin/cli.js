@@ -146,7 +146,7 @@ require('yargs')
             default: null,
             type: 'string',
             describe: 'Custom url encoded rh filter for searching products',
-        }
+        },
         category: {
             alias: 'c',
             default: null,
