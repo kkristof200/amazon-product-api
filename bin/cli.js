@@ -181,6 +181,11 @@ require('yargs')
             type: 'number',
             describe: 'Timeout between requests. Timeout is set in mls: 1000 mls = 1 second',
         },
+        proxy: {
+            default: null,
+            type: 'string',
+            describe: 'Proxies to use without the \'http(s)://\' tag. If want to pass multiple, pass them separated by \',\'',
+        }
     })
     .check((argv) => {
         if (['products', 'reviews', 'asin', 'categories', 'countries'].indexOf(argv['_'][0]) === -1) {
